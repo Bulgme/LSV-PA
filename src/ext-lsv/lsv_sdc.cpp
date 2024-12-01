@@ -11,7 +11,7 @@
 #include <cassert>
 #include <bitset>
 
-// Prototypes
+// Prototypes functions
 static int Lsv_CommandSdc(Abc_Frame_t * pAbc, int argc, char ** argv);
 static int Lsv_CommandOdc(Abc_Frame_t * pAbc, int argc, char ** argv);
 extern "C" Aig_Man_t* Abc_NtkToDar(Abc_Ntk_t* pNtk, int fExors, int fRegisters);
@@ -183,3 +183,4 @@ static int Lsv_CommandOdc(Abc_Frame_t* pAbc, int argc, char** argv) {
     Abc_NtkDelete(pMiter);
     return 0;
 }
+ 
